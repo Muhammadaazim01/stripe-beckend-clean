@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);const bodyParser = require('body-parser');
